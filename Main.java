@@ -36,7 +36,7 @@ public class Main {
         final JButton btn = (JButton)event.getSource();
 
         // フェードアウトアニメの実行部分
-        final Timer timer = new Timer(10, null);
+        final Timer timer = new Timer(10, null); // 10m秒周期で、透過処理を実行する
         timer.addActionListener(new ActionListener() {
             /** アルファ値(透過具合の値)255が透過なし、0が完全透明 */
             public int alf = 0xFF;
